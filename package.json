@@ -4,7 +4,11 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"tsc": "tsc"
+		"tsc": "tsc",
+		"pretest": "eslint --ignore-path .eslintignore .",
+		"test": "jest --runInBand",
+		"build": "tsc",
+		"start": "node build/App.js"
 	},
 	"author": "",
 	"license": "ISC",
