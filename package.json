@@ -1,0 +1,19 @@
+{
+	"name": "agile-engine-task-gallery-search",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"tsc": "tsc"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/axios": "^0.14.0",
+		"@types/memjs": "^1.2.1",
+		"@types/node": "^14.0.27",
+		"axios": "^0.19.2",
+		"memjs": "^1.2.2",
+		"typescript": "^3.9.7"
+	}
+}
