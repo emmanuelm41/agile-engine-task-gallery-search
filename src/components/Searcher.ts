@@ -4,7 +4,7 @@ import { Tag } from "./indexes/Tag";
 import { MemJS } from "./memjs/MemJS";
 
 export class Searcher {
-    get(terms: { author?: string; camera: string; tags: string }) {
+    getImagesIds(terms: { author?: string; camera?: string; tags?: string }) {
         const { author, camera, tags } = terms;
         let imageIds: { [key: string]: any } = {};
 
@@ -15,7 +15,7 @@ export class Searcher {
         return imageIds;
     }
 
-    async getImageData(ids: { [key: string]: any }) {
+    async getImagesData(ids: { [key: string]: any }) {
         const images = [];
         for (let id in ids) {
             const { value } = await MemJS.getInstance().get(id);
